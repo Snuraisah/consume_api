@@ -3,10 +3,9 @@ import 'dart:convert';
 import 'package:http/http.dart';
 import 'package:http/http.dart' as http;
 
-import '../model/user.dart';
+import '../models/user.dart';
 
 class UserController {
-  
   Future<List<User>> getUser() async {
     Uri url = Uri.parse("https://jsonplaceholder.typicode.com/users");
 
